@@ -1,0 +1,46 @@
+.hover-container {
+  position: relative;
+}
+.hover-trigger {
+  cursor: pointer;
+}
+.hover-popup {
+  display: none;
+
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 250px;
+  padding: 10px;
+
+  background-color: #fff;
+  
+  border: 1px solid #a2a9b1;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.hover-container:hover .hover-popup {
+  display: block;
+  opacity: 1;
+}
+.hover-popup::after {
+  content: '';
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  border-width: 8px;
+  border-style: solid;
+  border-color: #a2a9b1 transparent transparent transparent;
+}
+.hover-popup p {
+  margin: 4px;
+}

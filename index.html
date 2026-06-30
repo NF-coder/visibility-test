@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility API Test</title>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/index.css"/>
+    <link rel="stylesheet" type="text/css" href="./styles/popup.css"/>
+</head>
+<body>
+    <main id="plane">
+        <div class="status-item" id="visibility-status-block">
+            <h1 id="visibility-status">Visibility API status</h1>
+            <div class="hover-container">
+                <img class="info-icon hover-trigger" src="./img/circle-question-mark.svg"/>
+                <div class="hover-popup">
+                    <p>States: <strong>Visible</strong> or <strong>Hidden</strong></p>
+                    <p>Used to pause animations, videos, or network requests when user switches tabs</p>
+                    <p><strong>Test:</strong> Switch to another tab and see through page preview</p>
+                </div>
+            </div>
+        </div>
+        <div class="vertical-dashed-line"></div>
+        <div class="status-item" id="focus-status-block">
+            <h1 id="focus-status">Focused status</h1>
+            <div class="hover-container">
+                <img class="info-icon hover-trigger" src="./img/circle-question-mark.svg"/>
+                <div class="hover-popup">
+                    <p>States: <strong>Focus</strong> or <strong>Blur</strong></p>
+                    <p>Unlike Visibility, Blur triggers when clicking outside the page (address bar, another app, DevTools)</p>
+                    <p><strong>Test:</strong> Click on address bar or switch app</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
